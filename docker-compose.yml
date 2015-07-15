@@ -2,6 +2,5 @@ app:
   build: .
   volumes:
     - ./log:/app/log
-  environment:
-    LOGFILE: /app/log/hn-events.jsonlines
+    - ./logrotate.conf:/etc/logrotate.conf
   restart: always

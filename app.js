@@ -1,7 +1,7 @@
 'use strict';
 
+var _ = require('lodash');
 var itemWatcher = require('./lib/itemWatcher');
-var output = require('./lib/log');
 
 itemWatcher.start();
-itemWatcher.on('data', output.info);
+itemWatcher.on('data', _.compose(console.log, JSON.stringify));
