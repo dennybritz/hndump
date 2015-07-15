@@ -1,0 +1,29 @@
+{
+  "name": "hndump",
+  "version": "0.1.0",
+  "description": "Watches HackerNews and dumps raw event data.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dennybritz/hndump"
+  },
+  "keywords": [
+    "HackerNews",
+    "HN"
+  ],
+  "author": "Denny Britz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dennybritz/hndump/issues"
+  },
+  "homepage": "https://github.com/dennybritz/hndump",
+  "dependencies": {
+    "bluebird": "^2.9.33",
+    "bunyan": "^1.4.0",
+    "firebase": "^2.2.7",
+    "lodash": "^3.10.0"
+  }
+}
