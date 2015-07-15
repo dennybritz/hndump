@@ -4,3 +4,4 @@ app:
     - ./log:/app/log
   environment:
     LOGFILE: /app/log/hn-events.jsonlines
+  restart: always
