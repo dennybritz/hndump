@@ -2,5 +2,4 @@ app:
   build: .
   volumes:
     - ./log:/app/log
-    - ./logrotate.conf:/etc/logrotate.conf
   restart: always

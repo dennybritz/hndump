@@ -1,6 +1,7 @@
 from node:0.12
 
 COPY ./ /app
+COPY ./logrotate.conf /etc/logrotate.conf
 WORKDIR /app
 
 # Install logrotate
@@ -10,6 +11,9 @@ RUN apt-get update && \
 
 RUN rm -rf node_modules && \
   npm install
+
+RUN /etc/init.d/cron start && \
+  chmod 0644 /etc/logrotate.conf
 
 VOLUME /app/log
 
