@@ -1,13 +1,13 @@
 from node:0.12
 
-COPY ./ /app
-COPY ./logrotate.conf /etc/logrotate.conf
-WORKDIR /app
-
 # Install logrotate
 RUN apt-get update && \
   apt-get install -y logrotate && \
   apt-get clean
+
+COPY ./logrotate.conf /etc/logrotate.conf
+COPY ./ /app
+WORKDIR /app
 
 RUN rm -rf node_modules && \
   npm install
