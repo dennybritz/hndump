@@ -17,4 +17,4 @@ RUN /etc/init.d/cron start && \
 
 VOLUME /app/log
 
-CMD ["/bin/bash", "-c", "node app.js > /app/log/hn-events.jsonlines"]
+CMD ["/bin/bash", "-c", "node app.js >> /app/log/hn-events.jsonlines"]
