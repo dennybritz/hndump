@@ -2,4 +2,3 @@ app:
   build: .
   volumes:
     - ./log:/app/log
-  restart: always
