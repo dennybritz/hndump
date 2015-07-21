@@ -8,4 +8,4 @@ RUN rm -rf node_modules && \
 
 VOLUME /app/log
 
-CMD ["/bin/bash", "-c", "node app.js >> /app/log/hn-data.jsonlines"]
+CMD ["/bin/bash", "-c", "node app.js > /app/log/hn-data.jsonlines"]

@@ -1,0 +1,4 @@
+app:
+  build: git@github.com:dennybritz/hndump.git
+  volumes:
+    - /var/data/hndump/log:/app/log
